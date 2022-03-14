@@ -18,15 +18,15 @@
               <div class="col-md-10 col-lg-6 col-xl-5 order-2 order-lg-1">
 
                 <p class="text-center h1 fw-bold mb-5 mx-1 mx-md-4 mt-4">Sign up</p>
-                <p class="text-center h3 fw-bold mb-5 mx-1 mx-md-4 mt-4">Please sign up in order to make a booking</p>
+                <p class="text-center h3 fw-bold mb-5 mx-1 mx-md-4 mt-4">Please sign up in order to see your booking</p>
 
                 <form class="mx-1 mx-md-4" action="{{route('guest.save')}}" method="post" id="main_form">
                     @csrf
                   <div class="d-flex flex-row align-items-center mb-4">
                     <i class="fas fa-user fa-lg me-3 fa-fw"></i>
                     <div class="form-outline flex-fill mb-0">
-                    <label class="form-label" for="form3Example1c">Your Name</label>
-                      <input type="text" id="form3Example1c" name="name" class="form-control" />
+                    <label class="form-label" for="">Your Name</label>
+                      <input type="text" id="" name="name" class="form-control" />
                       <span class="text-danger error-text name_error"></span>
 
                       
@@ -36,8 +36,8 @@
                   <div class="d-flex flex-row align-items-center mb-4">
                     <i class="fas fa-envelope fa-lg me-3 fa-fw"></i>
                     <div class="form-outline flex-fill mb-0">
-                    <label class="form-label" for="form3Example3c">Your Email</label>
-                      <input type="email" id="form3Example3c" class="form-control" name="email" />
+                    <label class="form-label" for="">Your Email</label>
+                      <input type="email" id="" class="form-control" name="email" />
                       <span class="text-danger error-text email_error"></span>
                       
                     </div>
@@ -46,8 +46,8 @@
                   <div class="d-flex flex-row align-items-center mb-4">
                     <i class="fas fa-lock fa-lg me-3 fa-fw"></i>
                     <div class="form-outline flex-fill mb-0">
-                    <label class="form-label" for="form3Example4c">Password</label>
-                      <input type="password" id="form3Example4c" class="form-control" name="password"/>
+                    <label class="form-label" for="">Password</label>
+                      <input type="password" id="" class="form-control" name="password"/>
                       <span class="text-danger error-text password_error"></span>
                       
                     </div>
@@ -56,8 +56,8 @@
                   <div class="d-flex flex-row align-items-center mb-4">
                     <i class="fas fa-key fa-lg me-3 fa-fw"></i>
                     <div class="form-outline flex-fill mb-0">
-                    <label class="form-label" for="form3Example4cd">Repeat your password</label>
-                      <input type="password" id="form3Example4cd" class="form-control" name="password2"/>
+                    <label class="form-label" for="">Repeat your password</label>
+                      <input type="password" id="" class="form-control" name="password2"/>
                       <span class="text-danger error-text password2_error"></span>
                       
                     </div>
@@ -65,11 +65,12 @@
 
                   <div class="d-flex flex-row align-items-center mb-4">
                   <div class="form-check text-center">
-                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" required='required'>
+                    <input class="form-check-input" type="checkbox" value="" id="myCheck" required>
                     <label class="form-check-label" for="flexCheckDefault">
                     I agree all statements in <a href="#!">Terms of service</a>
                     </label><br><br>
                     <button type="submit" class="btn btn-primary btn-lg">Register</button>
+                    <a type="button" class="btn btn-primary btn-lg" href="http://localhost/hms22/hms/index.php">Back to site</a>
                   </div>
                  
                     </div>
